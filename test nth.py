@@ -1,13 +1,6 @@
 import unittest
-
-# Functions to be tested
-def even_numbers_to_nth(numbers, n):
-    return " ".join(str(num) for num in numbers[:n] if num % 2 == 0)
-
-def odd_numbers_to_nth(numbers, n):
-    return " ".join(str(num) for num in numbers[:n] if num % 2 != 0)
-
-# Unit tests
+from even_odd_function import even_numbers_to_nth
+from even_odd_function import odd_numbers_to_nth
 class TestNumberFunctions(unittest.TestCase):
     
     def test_even_numbers_to_nth(self):
